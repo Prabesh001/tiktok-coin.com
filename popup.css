@@ -1,0 +1,119 @@
+.popup{
+  background-color: white;
+  overflow: hidden;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  padding: 10px 20px;
+  height: fit-content;
+  max-width: 400px;
+  width: fit-content;
+  box-sizing: border-box;
+  box-shadow: 0 0 4px #00000066;
+  border-radius: 5px;
+  display: none;
+  z-index: 90;
+  scale: 0;
+  transition: all 1s;
+}
+.popup-appear{
+  scale: 1;
+  display: block;
+}
+
+/* first-popup-section */
+.first-popup-section{
+  position:relative;
+  border-bottom: 1px solid #dad3d3;
+  padding: 0 0 8px 10px ;
+  margin-bottom: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+.custom{
+  font-weight: bold;
+}
+/* first-popup-section */
+
+/* input-box */
+.coin-amt-input input{
+  margin-top: 10px;
+}
+.coin-amt-input input{
+  width: 89%;
+  border: none;
+  outline: none;
+  padding: 0 0 0 28px;
+  font-size: 15px;
+}
+
+.coin-amt-input label{
+  border-radius: 3px;
+  border: 1px solid #dad3d3;
+  padding: 0;
+  position: relative;
+  padding: 6px 0 6px 0;
+}
+::-webkit-inner-spin-button{
+  appearance: none;
+}
+
+.coin-in-input{
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  left: -15px;
+  top: 7px;
+}
+/* input-box */
+
+/* Number Table */
+.number-table{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 14px;
+  column-gap: 12px;
+}
+
+.num{
+  height: 90%;
+  width: 50%;
+  border-radius: 3px;
+  background-color: #d1d1d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding: 5px 20px;
+  cursor: default;
+}
+/* Number Table */
+
+.last-popup-section{
+  display: flex;
+  margin-bottom: 8px;
+  align-items: center;
+}
+.question-mark{
+  margin-right: 10px;
+  border-right: 1px solid #cdc9c9;
+  cursor: pointer;
+  padding-right: 8px;
+}
+.fa-circle-question{
+  font-size: 20px;
+}
+.popup-recharge{
+  cursor: pointer;
+  width: 90%;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+}
+
+.total-of-custom{
+  padding: 0 20px 0 0 ;
+  width: 200px;
+}

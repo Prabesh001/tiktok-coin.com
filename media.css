@@ -1,0 +1,115 @@
+
+@media (max-width: 780px) {
+  .searchbox{
+    display: none;
+  }
+  .input-type{
+    display: none;
+  }
+}
+@media (max-width: 1306px) {
+  .coin-table{
+    column-gap: 150px;
+  }
+}
+@media (max-width: 1213px) {
+  .coin-table{
+    column-gap: 120px;
+  }
+}
+@media (max-width: 1127px) {
+  .coin-table{
+    column-gap: 100px;
+  }
+}
+@media (max-width: 1066px) {
+  .coin-table{
+    column-gap: 80px;
+  }
+}
+@media (max-width: 1066px) {
+  .coin-table{
+    column-gap: 180px;
+  }
+}
+@media (max-width: 952px) {
+  .coin-table{
+    column-gap: 150px;
+  }
+}
+@media (max-width: 892px) {
+  .coin-table{
+    column-gap: 120px;
+  }
+  .input-type{
+    width: 120px;
+  }
+}
+@media (max-width: 834px) {
+  .coin-table{
+    column-gap: 90px;
+  }
+}
+@media (max-width: 754px) {
+  .coin-table{
+    column-gap: 250px;
+  }
+}
+@media (max-width: 772px) {
+  .coin-table{
+    column-gap: 200px;
+  }
+  .head-file{
+    margin-right: 90px;
+  }
+}
+@media (max-width: 667px) {
+  .coin-table{
+    column-gap: 150px;
+  }
+}
+@media (max-width: 620px) {
+  .coin-table{
+    column-gap: 90px;
+  }
+  .head-file{
+    margin-right: 10px;
+  }
+}
+@media (max-width: 512px) {
+  .coin-table{
+    column-gap: 60px;
+  }
+  .head-file{
+    margin-right: 10px;
+  }
+}
+@media (max-width: 400px) {
+  header{
+    height: auto !important ;
+  }
+  .first-section{
+    width: 110px;
+  }
+  .third-section{
+    position: absolute;
+    left: 46%;
+    text-wrap: nowrap;
+  }
+  .upload,.login{
+    padding: 3px 10px;
+  }
+  .login{
+    margin: 0 10px;
+  }
+  .coin-box{
+    height: 50px;
+    width: 135px;
+  }
+  .coin-number-display{
+    margin-top: 0;
+  }
+  .coin-price{
+    margin-top: -10px;
+  }
+}

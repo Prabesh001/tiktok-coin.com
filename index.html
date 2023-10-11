@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TikTok Coins: Buy and recharge Coins</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  
+  <link rel="shortcut icon" href="tt.png" type="image/x-icon" />
+  <link rel="stylesheet" href="tiktok.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="media.css" />
+  <link rel="stylesheet" href="popup.css" />
+  <link rel="stylesheet" href="second-popup.css"/>
+  <link rel="stylesheet" href="final-popup.css"/>
+
+</head>
+
+<body>
+  <header>
+    <div class="first-section">
+      <a class="main-link" href="https://www.tiktok.com/">
+        <img src="tiktok-font-icon.jpg" alt="" />
+      </a>
+    </div>
+
+    <div class="search">
+      <label for="searchbar" class="searchbox">
+        <input
+          type="text"
+          id="searchbar"
+          class="input-type"
+          placeholder="Search"
+        />
+        <i class="fa-solid fa-magnifying-glass" style="color: #72767e"></i>
+      </label>
+    </div>
+
+    <div class="third-section">
+      <button class="upload">&plus; Upload</button>
+      <button class="login">Log in</button>
+      <i class="fa-solid fa-ellipsis-vertical" style="color: #615c5c"></i>
+    </div>
+  </header>
+  <br/><br /><br />
+
+  <main>
+    <div class="head-file">
+      <span><h3>Get Coins</h3></span>
+      <span><h5>View transaction history</h5></span>
+    </div>
+    
+    <div class="poppin-box">
+      <input type="text" placeholder="Enter Username" class="username">
+    </div>
+    <br />
+
+    <b>Recharge</b>
+    <br />
+
+    <div class="coin-table"></div>
+
+    <div class="payment-method">
+      <span>Payment method:</span> 
+    <span>
+      <img src="visa.png" class="visa-payment" alt="">
+    </span>
+    </div>
+
+    <div class="recharge-first-page">
+      <p>Total:
+        <span class="total-amount-last"></span></p>
+        <button class="recharge">Recharge</button>
+    </div>
+  </main>
+
+  <div class="loading">
+    <div id="app">
+      <div id="loader"></div>
+    </div>
+  </div>
+
+  <div class="popup">
+    <div class="first-popup-section">
+      <div class="invisible"></div>
+      <div class="custom">Custom</div>
+      <div class="cross-icon" onclick="popuphide()">
+        <i class="fa-solid fa-xmark" style="color: #000000;"></i>
+      </div>
+    </div>
+
+    <div class="coin-amt-input">
+      <label for="inputbox">
+        <img src="Coin.png" alt="" class="coin-in-input">
+        <input type="number" id="inputbox" class="coin-input" oninput="calculateTotal()">
+      </label>  
+    </div>
+
+    <div class="number-table"></div>
+    <br>
+
+    <span>Total:</span>
+    <span class="total-of-custom"></span><br><br>
+
+    <div class="last-popup-section">
+      <div class="question-mark">
+        <i class="fa-regular fa-circle-question" style="color: #000000;"></i>
+      </div>
+      <button class="recharge popup-recharge">Recharge</button>
+    </div>
+  </div>
+
+
+  <div class="second-popup">
+    <div class="first-popup-section">
+      <div class="cross-icon2" onclick="popuphide2()">
+        <i class="fa-solid fa-xmark" style="color: #000000;"></i>
+      </div>
+      <div class="order">Order summary</div>
+      <div class="invisible"></div>
+    </div>
+
+    <div class="second-section-popup">
+      <div class="account-name">
+       <b> <span>Account</span></b>
+        <b> <span>Prabesh</span></b>
+      </div>
+
+      <div class="transaction">
+        <b><span class="recharge-coin-amount"></span></b>
+        <b><span class="recharge-coin-price"></span></b>
+      </div>
+
+      <div class="payment-visa">
+        <span>
+          <div class="select-payment">Select a payment method</div>
+          <img class="visa" src="visa-logo.png" alt="">
+          <b>********1853</b>
+        </span>
+        <span>
+          <label class="custom-radio">
+            <input type="radio" name="options" >
+        </label>
+        </span>
+      </div>
+
+    <div class="total-in-summary">
+      <b>
+        <span>Total:</span>
+        <span class="total-in-order"></span>
+      </b>
+    </div>
+
+    <div class="last-popup-section">
+      <div class="question-mark">
+        <i class="fa-regular fa-circle-question" style="color: #000000;"></i>
+      </div>
+      <button class="pay-now">Pay now</button>
+    </div>
+
+    </div>
+
+  </div>
+
+  <div class="processing-popup">
+    <center>
+      <div class="hour-glass">
+        <i class="fa-regular fa-hourglass" style="color: #000000;"></i>
+      </div>
+    </center>
+
+    <div>
+      <center>
+        <h3>Processing you payment</h3>
+      </center>
+
+      <center>
+        <h5 style="margin-top: 0;">This could take a few seconds</h5>
+      </center>
+    </div>
+
+    <center>
+      <div id="countdown">
+        5:00
+      </div>
+    </center>
+  </div>
+
+  <div class="final-popup">
+    <div class="first-popup-section   for-final">
+      <i class="fa-regular fa-circle-question" style="color: #000000;"></i>
+      </div>
+
+      <center>
+        <div class="check">
+          <i class="fa-solid fa-check" style="color: #0aa91c;"></i>
+        </div>
+      </center>
+
+      <center>
+        <h4>Payment completed</h4>
+      </center>
+
+      <center>
+          <p class="success">
+          You recharged <span class="last-popup-number"></span> Coins. You can use Coins to send virtual Gifts.
+        </p>
+      </center>
+
+      <button class="get-back">Get Back</button>
+      
+    </div>
+    
+  </div>
+
+  <script src="tiktok.js"></script>
+  <script src="countdown.js"></script>
+</body>
+</html>

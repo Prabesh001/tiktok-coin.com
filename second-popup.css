@@ -1,0 +1,79 @@
+.order{
+  font-weight: bold;
+  font-size: 16px;
+}
+.cross-icon2{
+  font-size: 16px;
+}
+
+/* Second Popup */
+.second-popup{
+  position: fixed;
+  background-color: white;
+  overflow: hidden;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  padding: 10px 20px;
+  height: fit-content;
+  max-width: 400px;
+  width: 400px;
+  box-sizing: border-box;
+  box-shadow: 0 0 4px #00000066;
+  border-radius: 5px;
+  z-index: 90;
+  --font-size: 14px;
+  display: none;
+}
+
+.account-name, .transaction, .payment-visa{
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-size);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.visa{
+  width: 43px;
+  height: 15px;
+  padding: 0;
+  margin-left: 0;
+}
+.select-payment{
+  font-size: 11px;
+  color: #989292;
+}
+/*radio*/
+input[type="radio"] {
+  visibility: hidden;
+}
+.custom-radio{
+  padding: 2px 0px;
+  outline: 2px solid white;
+  outline-offset: -4px;
+  background-color: red;
+  border-radius: 50%;
+}
+/*radio*/
+
+.total-in-summary{
+  margin-bottom: 3px;
+}
+.pay-now{
+  cursor: pointer;
+  width: 90%;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 5px 37px;
+  font-size: 15px;
+  border-radius: 4px;
+}
+/* Second Popup */
+
+.blur-background{
+  opacity: 0.6;
+}

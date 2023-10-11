@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+  padding: 0 20px;
+}
+.head-file{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 60px;
+}
+.head-file h5{
+  cursor: pointer;
+}
+
+.tt-coin{
+  height: 20px;
+  width: 20px;
+  margin: 0;
+}
+.coin-box{
+  box-sizing: border-box;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  width: 173px;
+  height: 66px;
+  padding: 10px 50px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.coin-amount-display{
+  font-weight: bold;
+  margin-left: 6px;
+  font-size: 17px;
+}
+.selected{
+  outline: 2px solid #f6f60f;
+}
+.coin-box:hover{
+  outline: 2px solid #f6f60f;
+}
+.coin-box .active{
+  outline: 2px solid #f6f60f;
+}
+.coin-number-display{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 3px;
+}
+.coin-table{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  column-gap: 180px;
+  row-gap: 30px;
+  flex-wrap: wrap;
+}
+.coin-price{
+  font-size: 12px;
+  color: #a39d9d;
+  text-wrap: nowrap;
+  margin-left: 12px;
+}
+
+.poppin-box{
+  display: flex;
+  box-sizing: border-box;
+  border: none;
+  background-color: #f6f1f1;
+  width: fit-content;
+  padding: 8px 18px 8px 15px;
+  border-radius: 50px;
+}
+
+.poppin-box:hover{
+  cursor: default;
+}
+
+.username{
+  font-family:'Poppins', sans-serif ;
+  font-size: 15px;
+  border: none;
+  background-color: #f6f1f1;
+}
+.username:focus{
+  outline :none !important;
+}
+
+.recharge{
+  background-color: #e1dcdc;
+  border: none;
+  padding: 6px 37px;
+  color: rgb(121, 120, 120);
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.payment-method{
+  display: flex;
+}
+.visa-payment{
+  width: 90px;
+  height: auto;
+  margin-left: -22px;
+  margin-top: -22px;
+}
+
+::-webkit-scrollbar{
+  appearance: none;
+}
+
+.recharge-first-page{
+  margin-top: -25px;
+}
+
+/* loading animation */
+.loading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  z-index: 100;
+}
+:root {
+  --animation-duration: 0.8s;
+  --circle-diameter: 20px;
+  --circle-scale-percent: 0.2;
+}
+
+#loader {
+  position: relative;
+  left: calc(var(--circle-diameter) * -1);
+}
+
+#loader:before,
+#loader:after {
+  content: " ";
+  display: table-cell;
+  width: var(--circle-diameter);
+  height: var(--circle-diameter);
+  border-radius: 50%;
+  position: absolute;
+  animation-duration: var(--animation-duration);
+  animation-name: revolve;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  mix-blend-mode: darken;
+}
+
+#loader:before {
+  background: rgb(77, 232, 244);
+}
+
+#loader:after {
+  background: rgb(253, 62, 62);
+  animation-delay: calc(var(--animation-duration) / -2);
+}
+
+@keyframes revolve {
+  0% {
+    left: 0;
+  }
+  25% {
+    transform: scale(calc(1 + var(--circle-scale-percent)));
+  }
+  50% {
+    left: var(--circle-diameter);
+  }
+  75% {
+    transform: scale(calc(1 - var(--circle-scale-percent)));
+  }
+  100% {
+    left: 0;
+  }
+}
+
+/* loading animation */
